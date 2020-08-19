@@ -38,23 +38,26 @@
 </head>
 
 
-<div class="d-flex justify-content-between">
-<h1>Order Form</h1>
-
-
-<form method="post">
+<div class="">
+  <div class="container-fluid text-center">    
+  <div class="row content">
+    
+    <div class="col-sm-8 text-right"> 
+      
+      <h1>Order Form</h1>
+     
+      <p><form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    
+    <button type="submit" class="btn btn-primary">Submit</button>
     <div class="form-actions">
-      
-       <button type="submit" class="btn btn-primary">Submit</button>
+   <a href="{% url 'index' %}">Or you can go back to the Home Page<h3><span class="badge badge-secondary">Home</span></h3></a>
+     
 
     </div>
 </form>
 
 
-<a href="{% url 'index' %}"><h3><span class="badge badge-secondary"></span></h3></a>
 
 </div>
 
