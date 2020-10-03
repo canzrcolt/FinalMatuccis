@@ -16,6 +16,8 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;1,100&display=swap" rel="stylesheet">  
 
   <!-- Vendor CSS Files -->
   <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -29,12 +31,7 @@
   <!-- Template Main CSS File -->
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Restaurantly - v1.1.0
-  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -66,6 +63,7 @@
           <li><a href="{% url 'contact' %}">Contact Us</a></li>
           <li><a href="{% url 'order' %}">Order Form</a></li>
           
+          
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -82,9 +80,9 @@
           <img src="{% static 'assets/img/wedding.jpg' %}" width="80%" height="80%" alt="">
         </div>
       </div>
-        <div class="col-lg-6 order-lg-2" >
+        <div class="col-lg-6 order-lg-2">
 
-          <h1><br></br>Welcome to <span>Matucci's Custom Cakes</span></h1>
+          <h1><br></br><span>Matucci's Custom Cakes</span></h1>
           <h2>"Scratch Baking at its Best!"</h2>
           
          
@@ -98,33 +96,23 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" style="display:flex; justify-content: center;">
 
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <div class="about-img">
-              <img src="{% static 'assets/img/matlogo.png' %}" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>About us</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+        
+          
+          <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 justify-content-center">
+            <h3 style="font-family: Parisienne; font-size:3rem; padding-bottom: 30px;">Welcome to Matucci's Custom Cakes!</h3>
+           
+            
+            <p style=" font-size: 1.2rem;">
+              We are a speciality cake company where we design cakes from scratch for all occasions. <br></br>David, the owner, is a trained pastry chef who has been working in the pastry field since 1978. His experience has varied from working in country clubs, restaurants and the hotel industries where he worked for Hyatt hotels as a corporate pastry chef for 12 years. He has traveled and opened pastry shops all over the United States including Puerto Rico and the Caribbean Islands. Once David relocated to Ohio, he worked as a Bakery Manager for Giant Eagle and Kroger Catering.<br></br> David has a varied amount of skills as a pastry chef which allows him to be very creative for his customers. Please allow us to create a speciality cake for you to share with your family and friends on their special occasions. <br></br> We look forward to speaking with you soon!
             </p>
-            <ul>
-              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
+            <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            
           </div>
-        </div>
-
+          </div>
+        
+        
       </div>
     </section><!-- End About Section -->
 
@@ -140,7 +128,7 @@
         <div class="row">
 
           <div class="col-lg-4">
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box" data-aos="zoom-in" data-aos-delay="50">
               <span>01</span>
               <h4>Weddings</h4>
               <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
@@ -148,7 +136,7 @@
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box" data-aos="zoom-in" data-aos-delay="50">
               <span>02</span>
               <h4>Birthdays</h4>
               <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
@@ -156,7 +144,7 @@
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="box" data-aos="zoom-in">
               <span>03</span>
               <h4>Custom Events</h4>
               <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
@@ -176,85 +164,83 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Events</h2>
-          <p>Organize Your Events For Our Bakery</p>
+          <h2>Mini Gallery</h2>
+          <p>Just a Taste of our Cakes!</p>
         </div>
 
-        <div class="owl-carousel events-carousel" data-aos="fade-up" data-aos-delay="100">
+        
+
 
           <div class="row event-item">
-            <div class="col-lg-6">
-              <img src="{% static 'assets/img/event-birthday.jpg' %}" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Birthday Parties</h3>
-              <div class="price">
-                <p><span>$189</span></p>
-              </div>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
-          </div>
+            <div class="col-lg-12">
+              
+          <!-- Grid row -->
+<div class="row">
 
-          <div class="row event-item">
-            <div class="col-lg-6">
-              <img src="{% static 'assets/img/event-wedding.png' %}" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Weddings</h3>
-              <div class="price">
-                <p><span>$290</span></p>
-              </div>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
-          </div>
+  <!-- Grid column -->
+  <div class="col-md-12 mb-3">
 
-          <div class="row event-item">
-            <div class="col-lg-6">
-              <img src="{% static 'assets/img/event-custom.png' %}" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Custom Parties</h3>
-              <div class="price">
-                <p><span>$99</span></p>
-              </div>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
+    <img src="{% static 'assets/img/monkey.jpg' %}"class="img-fluid z-depth-1" alt="Responsive image">
+
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+<!-- Grid row -->
+<div class="row">
+
+  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-3">
+
+    <img src="{% static 'assets/img/mario.jpg' %}" class="img-fluid z-depth-1"
+      alt="Responsive image">
+
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-3">
+
+    <img src="{% static 'assets/img/spiderman.jpg' %}"class="img-fluid z-depth-1" alt="Responsive image">
+
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-3">
+
+    <img src="{% static 'assets/img/grad.jpg' %}"class="img-fluid z-depth-1" alt="Responsive image">
+
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+<!-- Grid row -->
+<div class="row">
+
+  <!-- Grid column -->
+  <div class="col-md-6 mb-3">
+
+     <img src="{% static 'assets/img/bigwed.jpg' %}"class="img-fluid z-depth-1" alt="Responsive image">
+
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-6 mb-3">
+
+     <img src="{% static 'assets/img/wed4.jpg' %}"class="img-fluid z-depth-1" alt="Responsive image">
+
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+            
           </div>
 
         </div>
