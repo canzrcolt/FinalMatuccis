@@ -1,0 +1,147 @@
+* {
+      box-sizing: border-box;
+      color: #AEA9AB;
+      }
+      a{
+      font-size: 16px;
+      font-weight: 400;
+      color: #AEA9AB;
+      margin: -20px;
+      }
+      .button{
+        font: bold 11px Arial;
+        text-decoration: none;
+        background-color: #EEEEEE;
+        color: #333333;
+        padding: 2px 6px 2px 6px;
+        border-top: 1px solid #CCCCCC;
+        border-right: 1px solid #333333;
+        border-bottom: 1px solid #333333;
+        border-left: 1px solid #CCCCCC;
+      }
+      h3{
+      color: #AEA9AB;
+      }
+      html, body {
+      min-height: 100vh;
+      padding: 0;
+      margin: 0;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px; 
+      color: #AEA9AB;
+      }
+      input, textarea { 
+      font-family: inherit;
+      outline: none;
+      }
+      body {
+      
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-image: url(../img/back5.png);
+      background: rgba(232, 197, 210, 0.87);
+      
+      }
+      h1 {
+      font-family: 'Parisienne', cursive;
+      color: #47b3b1;
+      display: grid;
+      font-size: 3.3rem;
+      justify-content: center;
+      line-height: 50px;
+
+      }
+
+   
+      .form-left {
+            display: grid;
+            padding: 40px;
+      }
+      .form-right {
+            display: grid;
+            padding: 40px;
+      }
+      .form-inner {
+      
+      padding: 40px;
+      justify-content: center;
+      width: 60rem;
+      
+      column-width: 90%
+      }
+      @media (max-width: 568px) {
+      .form-inner {
+      width: 30rem;
+      }
+      }
+     
+      .form-inner input,
+      .form-inner textarea {
+
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 10px;
+      background: #fff;
+      grid-area: main;
+      font-family: Roboto, Arial, sans-serif;
+      }
+      .form-inner textarea {
+      font-family: Roboto, Arial;
+      resize: none;
+
+      }
+      .form-inner button {
+            display:flex;
+            align-content:center;
+            justify-content: center;
+      }
+     
+      button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 10px;
+      border: none;
+      border-bottom: 4px solid rgba(232, 197, 210, 0.87);
+      background-image: url(../img/back5.png);
+      background: #47b3b1;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      justify-content: center;
+      }
+      button:hover {
+      background: #c67777;
+      } 
+      @media (min-width: 568px) {
+      form {
+      width: 60%;
+      }
+      }
+      .itemLeft { grid-area: left; }
+      .itemRight { grid-area: right; }
+      
+      
+
+      .grid-container {
+      display: grid;
+      grid-template-areas:
+      'left main right'
+      'left main right'
+      'left main  right';
+       grid-gap: 10px;
+       background-color: #2196F3;
+        padding: 10px;
+        margin: 50px;
+      }
+
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+       text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
