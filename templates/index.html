@@ -167,18 +167,27 @@
           <h2>Mini Gallery</h2>
           <p>Just a Taste of our Cakes!</p>
         </div>
-        
-          <img src="{% static 'assets/img/love.jpg' %}" width="65%" style="padding: .2rem;" class="">
-          <img src="{% static 'assets/img/mario.jpg' %}" width="65%" style="padding: .2rem;" class="">
-          <img src="{% static 'assets/img/sleep.jpg' %}" width="65%" style="padding: .2rem;" class="">
-          <img src="{% static 'assets/img/goodbday.jpg' %}" width="65%" style="padding: .2rem;" class="">
-          <img src="{% static 'assets/img/wed4.jpg' %}" width="65%" style="padding: .2rem;" class="">
-
-         
+    
+    
+        <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
+          <div class="column" >
+            <img src="{% static 'assets/img/love.jpg' %}" width="60%" style="padding:10px;">
+          </div>         
+          <div class="column">
+            <img src="{% static 'assets/img/sleep.jpg' %}" width="60%" style="padding:10px;">
+          </div>  
+          <div class="column">        
+            <img src="{% static 'assets/img/goodbday.jpg' %}" width="60%" style="padding:10px;">
+          </div>
+          <div class="column">
+            <img src="{% static 'assets/img/mario.jpg' %}" width="60%" style="padding:10px;">          
+          </div>
           
-        
+        </div>
       </div>
-    </section><!-- End Events Section -->
+      </section>
+        
+     
 
 
 
