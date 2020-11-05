@@ -547,6 +547,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+
 #hero .btns {
   margin-top: 30px;
 }
@@ -900,9 +902,7 @@ section {
   .about {
     background-attachment: fixed;
   }
-}
-.about-img {
-
+  
 }
 
 /*--------------------------------------------------------------
@@ -1052,7 +1052,7 @@ section {
 
 .specials .nav-tabs {
   border: 0;
-}
+} 
 
 .specials .nav-link {
   border: 0;
@@ -1134,8 +1134,36 @@ section {
 }
 
 .events .container {
-  position: relative;
+  justify-content: center;
+  
+  width: 30rem;
+ 
 }
+
+.events .sillysilly {
+  display: grid;
+  grid-template-columns: 1fr ;
+  justify-content: center;
+  width: 100%;
+  
+  
+  
+ 
+}
+
+.sillyimg {
+  padding: 15px;
+  justify-self: center;
+  width: 110%;
+}
+
+@media (max-width: 800px) {
+  .sillyimg {
+    padding: 10px;
+    width: 80%;
+  }
+}
+
 
 
 
