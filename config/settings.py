@@ -75,7 +75,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
-
+os.environ['wsgi.url_scheme'] = 'https'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -139,3 +139,4 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_PASSWORD = "xigrgpybvirdsppr"
 
 django_heroku.settings(locals())
+os.environ['HTTPS'] = "on"
