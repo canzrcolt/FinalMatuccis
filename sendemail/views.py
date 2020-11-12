@@ -16,7 +16,7 @@ def contactView(request):
 		message_name = request.POST['message-name']
 		message_email = request.POST['message-email']
 		message = request.POST['message']
-		recipient_list = ['canzrcolt@gmail.com']
+		recipient_list = ['matucciscustomcakes78@gmail.com']
 		message = " Email: " + message_email + "\n Name: " + message_name + "\n Message: " + message
 		send_mail(message_name, message, message_email, recipient_list, fail_silently=False )
         
@@ -40,7 +40,7 @@ def orderView(request):
 		message_address = request.POST['message-guests']
 		
 		message = request.POST['message']
-		recipient_list = ['canzrcolt@gmail.com']
+		recipient_list = ['matucciscustomcakes78@gmail.com']
 		message = " Email: " + message_email + "\n Name: " + message_name + "\n Phone Number: " + message_phone + "\n Date: " + message_date + "\n Time: " + message_time + "\n Number of Guests: " + message_guests + "\n Address: " + message_address + "\n Message: " +  message
 		send_mail(message_name, message, message_email, recipient_list, fail_silently=False )
         
