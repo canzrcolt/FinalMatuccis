@@ -1,1 +1,1 @@
-web: gunicorn FinalMatuccis.wsgi
+web: gunicorn config.wsgi
